@@ -19,21 +19,25 @@ with c2:
 total = 0
 # contenedores
 plato, torta, jamon, manchego, huevo = [], [], [], [], []
-for n in range(chilaquiles):
-  st.subheader(f"Chilaquil-{n + 1}")
+for i in range(chilaquiles):
+  st.subheader(f"Chilaquil-{i + 1}")
   c3, c4, c5, c6, c7 = st.columns([1, 1, 1, 1, 1])
   with c3:
-    plato = st.number_input("Plato:", min_value=0, value=0)
+    plato[i] = st.number_input("Plato:", min_value=0, value=0)
   with c4:
-    torta = st.number_input("Torta:", min_value=0, value=0)
+    torta[i] = st.number_input("Torta:", min_value=0, value=0)
   with c5:
-    jamon = st.number_input("Jamón:", min_value=0, value=0)
+    jamon[i] = st.number_input("Jamón:", min_value=0, value=0)
   with c6:
-    manchego = st.number_input("Manchego:", min_value=0, value=0)
+    manchego[i] = st.number_input("Manchego:", min_value=0, value=0)
   with c7:
-    huevo = st.number_input("Huevo", min_value=0, value=0)
+    huevo[i] = st.number_input("Huevo", min_value=0, value=0)
 
-st.write("Done")
+st.write(plato)
+st.write(torta)
+st.write(jamon)
+st.wrtite(manchego)
+st.write(huevo)
 
 
 
