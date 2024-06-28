@@ -25,7 +25,7 @@ st.subheader("Menú:")
 # chilaquiles = 2
 col1, col2 = st.columns([1, 1])
 with col1:
-  st.subheader("Total de Chilaquiles")
+  st.write("Total de Chilaquiles")
 with col2:
   chilaquiles = st.number_input("", min_value=0, value=0)
   
