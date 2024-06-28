@@ -18,7 +18,7 @@ with c2:
 
 total = 0
 
-for chilaquil in chilaquiles:
+for chilaquil in range(1, chilaquiles + 1):
   st.header(f"{chilaquil}")
   c3, c4, c5, c6, c7 = st.columns([1, 1, 1, 1, 1])
   with c3:
