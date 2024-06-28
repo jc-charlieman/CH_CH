@@ -36,7 +36,7 @@ for i in range(chilaquiles):
 st.write(plato)
 st.write(torta)
 st.write(jamon)
-st.wrtite(manchego)
+st.write(manchego)
 st.write(huevo)
 
 
