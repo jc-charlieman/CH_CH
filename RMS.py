@@ -32,6 +32,7 @@ for n in range(1, chilaquiles + 1):
   with c7:
     chilaquiles = st.number_input("Huevo", min_value=0, value=0)
 
+st.write("Done")
 
 
 
