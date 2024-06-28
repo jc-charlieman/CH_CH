@@ -18,8 +18,8 @@ with c2:
 
 total = 0
 
-for chilaquil in range(1, chilaquiles + 1):
-  st.header(f"{chilaquil}")
+for n in range(1, chilaquiles + 1):
+  st.subheader(f"Chilaquil-{n}")
   c3, c4, c5, c6, c7 = st.columns([1, 1, 1, 1, 1])
   with c3:
     pedido = st.number_input("Plato:", min_value=0, value=0)
