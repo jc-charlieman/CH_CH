@@ -27,7 +27,7 @@ col1, col2 = st.columns([1, 1])
 with col1:
   st.subheader("Total de Chilaquiles")
 with col2:
-  chilaquiles = st.number_input("#Chilaquiles:", min_value=0, value=0)
+  chilaquiles = st.number_input(min_value=0, value=0)
   
 
 
