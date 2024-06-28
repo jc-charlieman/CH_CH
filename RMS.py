@@ -12,7 +12,7 @@ st.subheader("Menú:")
 
 
 # Comida
-c1, c2 = st.columns([1, 4])
+c1, c2 = st.columns([1, 3])
 with c1:
   st.write("\n")
   st.write("\n")
