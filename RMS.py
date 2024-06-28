@@ -5,9 +5,9 @@ import streamlit as st
 
 
 # Sidebar
-sl.title("CHILAQUIL CHILANGO by Wisho!.")
+st.title("CHILAQUIL CHILANGO by Wisho!.")
 
-col1, col2, col3, col4 = sl.columns([1, 1, 1, 1])
+col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
 with col1:
   i1 = st.number_input("Ch-1:")
 with col2:
