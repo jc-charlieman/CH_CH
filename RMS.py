@@ -23,10 +23,10 @@ st.subheader("Menú:")
 #   i4 = st.number_input("Ch-4", value=0)
 
 # chilaquiles = 2
-col1, col2 = st.columns([1, 1])
-with col1:
+c1, c2 = st.beta_columns([1, 4])
+with c1:
   st.write("Total de Chilaquiles")
-with col2:
+with c2:
   chilaquiles = st.number_input("", min_value=0, value=0)
   
 
