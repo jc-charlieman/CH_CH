@@ -12,9 +12,9 @@ st.subheader("Menú:")
 # Comida
 c1, c2 = st.columns([1, 1])
 with c1:
-  pedido = st.number_input("\#Pedido:", min_value=0, value=0)
+  pedido = st.number_input("\# Pedido:", min_value=0, value=0)
 with c2:
-  chilaquiles = st.number_input("No. Chilaquiles:", min_value=0, value=0)
+  chilaquiles = st.number_input("# Chilaquiles:", min_value=0, value=0)
 
 
 # for chilaquil in chilaquiles:
