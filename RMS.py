@@ -27,7 +27,7 @@ c1, c2 = st.columns([1, 2])
 with c1:
   st.write("")
   st.write("")
-  st.write("Total de Chilaquiles")
+  st.write("Total de Chilaquiles:")
 with c2:
   # chilaquiles = st.number_input("", min_value=0, value=0)
   chilaquiles = st.text_input("")
