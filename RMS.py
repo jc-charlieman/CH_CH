@@ -20,4 +20,15 @@ with col3:
   i3 = st.number_input("Ch-3", value=0)
 with col4:
   i4 = st.number_input("Ch-4", value=0)
+  
+col5, col6, col7, col8 = st.columns([1, 1, 1, 1])
+with col5:
+  i1 = st.number_input("Ch-5:", value=0, min_value=0)
+with col6:
+  i2 = st.number_input("Ch-6", value=0)
+with col7:
+  i3 = st.number_input("Ch-7", value=0)
+with col8:
+  i4 = st.number_input("Ch-8", value=0)
+
 
