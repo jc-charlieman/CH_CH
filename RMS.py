@@ -8,8 +8,7 @@ st.title("CHILAQUIL CHILANGO by Wisho!.")
 
 # Subtitulo
 st.subheader("Menú:")
-
-
+st.divider()
 
 # Comida
 c1, c2 = st.columns([1, 3])
