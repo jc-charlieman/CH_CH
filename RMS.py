@@ -1,4 +1,4 @@
-
+"
 # import pandas as pd
 # import numpy as np
 import streamlit as st
@@ -25,13 +25,13 @@ for i in range(ch):
   f"c{i+3}", f"c{i+4}", f"c{i+5}", f"c{i+6}", f"c{i+7}" = st.columns([1, 1, 1, 1, 1])
   with f"c{i+3}":
     plato[i] = (st.number_input("Plato:", min_value=0, value=0))
-  with f"c{i+4}:
+  with f"c{i+4}":
     torta[i] = st.number_input("Torta:", min_value=0, value=0)
-  with f"c{i+5}:
+  with f"c{i+5}":
     jamon[i] = st.number_input("Jamón:", min_value=0, value=0)
-  with f"c{i+6}:
+  with f"c{i+6}":
     manchego[i] = st.number_input("Manchego:", min_value=0, value=0)
-  with f"c{i+7}:
+  with f"c{i+7}":
     huevo[i] = st.number_input("Huevo", min_value=0, value=0)
 
 st.write(plato)
