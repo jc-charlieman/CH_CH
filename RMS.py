@@ -29,7 +29,7 @@ for i in range(1, ch + 1):
   if ch == 1:
     k = [k for k in range(ch, ch + 5)]
   else:
-    k = [k for k in range(5*ch, 5*ch - 5, -1)]]
+    k = [k for k in range(5*ch, 5*ch - 5, -1)]
   with c1:
     plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=k[0]))
   with c2:
