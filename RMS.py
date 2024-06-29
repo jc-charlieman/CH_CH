@@ -114,10 +114,10 @@ for i in range(1, ch + 1):
   # st.write(total)
   # st.write(now)
   
-  @st.cache
-  def convert_csv(df):
-    return df.to_csv(index=False).encode("utf-8")
+  # @st.cache
+  # def convert_csv(df):
+  #   return df.to_csv(index=False).encode("utf-8")
    
-  csv = convert_csv(df)
-  st.download_button(label="Download CSV", data=csv, key=50)
+  # csv = convert_csv(df)
+  # st.download_button(label="DownCSV", data=csv, key=50)
 
