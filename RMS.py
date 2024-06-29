@@ -67,6 +67,9 @@ for i in range(1, ch + 1):
       arrachera[i-1] = st.number_input("Arrachera:", min_value=0, value=0, key=k[8])
     with c10:
       aguacate[i-1] = st.number_input("Aguacate", min_value=0, value=0, key=k[9])
+
+    subtotal = sum(d["costo"])
+    total += subtotal
     
   else:
     k = [k for k in range(10*i, 10*i - 10, -1)]
@@ -91,7 +94,10 @@ for i in range(1, ch + 1):
     with c10:
       aguacate[i-1] = st.number_input("Aguacate", min_value=0, value=0, key=k[9])
 
-st.write(pd.DataFrame(d))
+
+df = pd.DataFrame(d)
+st.write(df)
+st-write(total)
 
 
 
