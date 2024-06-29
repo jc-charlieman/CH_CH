@@ -27,9 +27,9 @@ for i in range(ch):
     plato[i] = (st.number_input("Plato:", min_value=0, value=0))
   with c:
     torta[i] = st.number_input("Torta:", min_value=0, value=0)
-  with c":
+  with c:
     jamon[i] = st.number_input("Jamón:", min_value=0, value=0)
-  with c":
+  with c:
     manchego[i] = st.number_input("Manchego:", min_value=0, value=0)
   with c:
     huevo[i] = st.number_input("Huevo", min_value=0, value=0)
