@@ -24,6 +24,7 @@ d = {}
 for i in range(1, ch + 1):
   st.subheader(f"Chilaquil-{i}")
   # Diccionario para almacenar los artículos
+  d["orden"] = []
   d["articulo"] = f"ch-{i}"
   d["ingredientes"] = []
   d["volumen"] = []
