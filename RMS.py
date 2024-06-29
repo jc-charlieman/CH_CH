@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import datetime
+from datetime import datetime, timedelta
 
 # Sidebar
 st.title("CHILAQUIL CHILANGO by Wisho!.")
@@ -12,9 +12,9 @@ st.subheader("Menú:")
 col1, col2 = st.columns([1, 1])
 with col1:
   orden = st.number_input("\# Orden:", min_value=0, value=0)
-  now = datetime.datetime.now()
+  now = datetime.now() - timedelta(hours=6)
   now = now.strftime("%d/%m/%Y %H:%M:%S")
-  now = datetime.datetime.strptime(now, "%d/%m/%Y %H:%M:%S")
+  now = datetime.strptime(now, "%d/%m/%Y %H:%M:%S")
 with col2:
   ch = st.number_input("\# Chilaquiles:", min_value=0, value=0)
 
