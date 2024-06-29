@@ -225,7 +225,7 @@ def convert_csv(df):
   return df.to_csv(index=False).encode("utf-8")
 
 if df == None:
-  return("Ingresa un pedido!.")
+  st.write("Ingresa un pedido!.")
 else: 
   csv = convert_csv(df)
   st.download_button(label="Download CSV", data=csv, file_name= "Cuenta" + ".csv", mime="text/csv")
