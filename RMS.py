@@ -172,7 +172,6 @@ for i in range(1, ch + 1):
         d["costo"].append(huevo[i-1] * 15)      
     with c6:
       pollo[i-1] = (st.number_input("Pollo:", min_value=0, value=0, key=k[5]))
-      pollo[i-1] = (st.number_input("Pollo:", min_value=0, value=0, key=k[5]))
       if pollo[i-1] > 0:
         d["orden"].append(orden)
         d["articulo"].append(f"ch-{i}")
