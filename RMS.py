@@ -28,7 +28,7 @@ for i in range(1, ch + 1):
   c1, c2, c3, c4, c5 = st.columns([1, 1, 1, 1, 1])
   with c1:
     plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=1))
-  with c2
+  with c2:
     torta[i-1] = st.number_input("Torta:", min_value=0, value=0, key=2)
   with c3:
     jamon[i-1] = st.number_input("Jamón:", min_value=0, value=0, key=3)
