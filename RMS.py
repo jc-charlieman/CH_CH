@@ -29,8 +29,8 @@ for i in range(1, ch + 1):
     k = [k for k in range(i, i + 10)]
     with c1:
       plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=k[0]))
-      if plato[i-1] > 0:
-        ingredientes.append((f"Chilaquil, "plato"))
+      # if plato[i-1] > 0:
+      #   ingredientes.append((f"Chilaquil, "plato"))
     with c2:
       torta[i-1] = st.number_input("Torta:", min_value=0, value=0, key=k[1])
     with c3:
