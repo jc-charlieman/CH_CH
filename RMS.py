@@ -18,12 +18,12 @@ with c2:
 
 total = 0
 # contenedores
-plato, torta, jamon, manchego, huevo = [0], [0], [0], [0], [0]
+plato, torta, jamon, manchego, huevo = [], [0], [0], [0], [0]
 for i in range(chilaquiles):
   st.subheader(f"Chilaquil-{i + 1}")
   c3, c4, c5, c6, c7 = st.columns([1, 1, 1, 1, 1])
   with c3:
-    plato[i] = st.number_input("Plato:", min_value=0, value=0)
+    plato.append(st.number_input("Plato:", min_value=0, value=0))
   with c4:
     torta[i] = st.number_input("Torta:", min_value=0, value=0)
   with c5:
