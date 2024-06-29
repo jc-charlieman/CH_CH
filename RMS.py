@@ -108,7 +108,7 @@ for i in range(1, ch + 1):
     df1 = pd.DataFrame(d)
     df = pd.concat([df0, df1])
 
-st.write(df)
+# st.write(df)
 st.write(total)
 st.write(now)
 
