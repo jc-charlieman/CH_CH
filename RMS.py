@@ -22,32 +22,33 @@ for i in range(1, ch + 1):
   st.subheader(f"Chilaquil-{i}")
   #cols = chilaquiles * 5
   #c = [f"c{ch * (col + 3)}" for col in range(5)]
-  if i == 1:
-    c = [f"c{ch * (col + 3)}" for col in range(5)]
-    c[0], c[1], c[2], c[3], c[4] = st.columns([1, 1, 1, 1, 1])
-    with c[0]:
-      plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=1))
-    with c[1]:
-      torta[i-1] = st.number_input("Torta:", min_value=0, value=0, key=2)
-    with c[2]:
-      jamon[i-1] = st.number_input("Jamón:", min_value=0, value=0, key=3)
-    with c[3]:
-      manchego[i-1] = st.number_input("Manchego:", min_value=0, value=0, key=4)
-    with c[4]:
-      huevo[i-1] = st.number_input("Huevo", min_value=0, value=0, key=5)
-  else:
-    c = [f"c{col}" for col in range(5*ch, 5*ch - 5, -1)]
-    c[0], c[1], c[2], c[3], c[4] = st.columns([1, 1, 1, 1, 1])
-    with c[0]:
-      plato[i-1] = (st.number_input("Plato:", min_value=0, value=0))
-    with c[1]:
-      torta[i-1] = st.number_input("Torta:", min_value=0, value=0)
-    with c[2]:
-      jamon[i-1] = st.number_input("Jamón:", min_value=0, value=0)
-    with c[3]:
-      manchego[i-1] = st.number_input("Manchego:", min_value=0, value=0)
-    with c[4]:
-      huevo[i-1] = st.number_input("Huevo", min_value=0, value=0)
+  # if i == 1:
+  #c = [f"c{ch * (col + 3)}" for col in range(5)]
+  #c[0], c[1], c[2], c[3], c[4] = st.columns([1, 1, 1, 1, 1])
+  c1, c2, c3, c4, c5 = st.columns([1, 1, 1, 1, 1])
+  with c1:
+    plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=1))
+  with c2
+    torta[i-1] = st.number_input("Torta:", min_value=0, value=0, key=2)
+  with c3:
+    jamon[i-1] = st.number_input("Jamón:", min_value=0, value=0, key=3)
+  with c4:
+    manchego[i-1] = st.number_input("Manchego:", min_value=0, value=0, key=4)
+  with c5:
+    huevo[i-1] = st.number_input("Huevo", min_value=0, value=0, key=5)
+  # else:
+  #   c = [f"c{col}" for col in range(5*ch, 5*ch - 5, -1)]
+  #   c[0], c[1], c[2], c[3], c[4] = st.columns([1, 1, 1, 1, 1])
+  #   with c[0]:
+  #     plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=))
+  #   with c[1]:
+  #     torta[i-1] = st.number_input("Torta:", min_value=0, value=0)
+  #   with c[2]:
+  #     jamon[i-1] = st.number_input("Jamón:", min_value=0, value=0)
+  #   with c[3]:
+  #     manchego[i-1] = st.number_input("Manchego:", min_value=0, value=0)
+  #   with c[4]:
+  #     huevo[i-1] = st.number_input("Huevo", min_value=0, value=0)
     
 st.write(plato)
 st.write(torta)
