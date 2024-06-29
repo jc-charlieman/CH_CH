@@ -104,10 +104,10 @@ st.write(df)
 st.write(total)
 st.write(now)
 
- @st.cache
- def convert_csv(df):
-     return df.to_csv(index=False).encode("utf-8")
+@st.cache
+def convert_csv(df):
+  return df.to_csv(index=False).encode("utf-8")
  
- csv = convert_csv(df)
- st.download_button(label="Download CSV", data=csv)
+csv = convert_csv(df)
+st.download_button(label="Download CSV", data=csv)
 
