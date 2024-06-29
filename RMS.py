@@ -97,7 +97,7 @@ for i in range(1, ch + 1):
 
 df = pd.DataFrame(d)
 st.write(df)
-st-write(total)
+st.write(total)
 
 
 
