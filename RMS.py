@@ -23,6 +23,7 @@ total = 0
 plato, torta, jamon, manchego, huevo = [0]*ch, [0]*ch, [0]*ch, [0]*ch, [0]*ch 
 pollo, bisteck, milanesa, arrachera, aguacate = [0]*ch, [0]*ch, [0]*ch, [0]*ch, [0]*ch
 d = {}
+df0 = pd.DataFrame()
 
 for i in range(1, ch + 1):
   st.subheader(f"Chilaquil-{i}")
@@ -74,9 +75,9 @@ for i in range(1, ch + 1):
 
     subtotal = sum(d["costo"])
     total += subtotal
-    df0 = pd.DataFrame()
+    # df0 = pd.DataFrame()
     df1 = pd.DataFrame(d)
-    df = concat([df0, df1])
+    df = pd.concat([df0, df1])
     
   else:
     k = [k for k in range(10*i, 10*i - 10, -1)]
@@ -103,7 +104,7 @@ for i in range(1, ch + 1):
 
     subtotal = sum(d["costo"])
     total += subtotal
-    df0 = pd.DataFrame()
+    # df0 = pd.DataFrame()
     df1 = pd.DataFrame(d)
     df = pd.concat([df0, df1])
 
