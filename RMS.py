@@ -21,7 +21,7 @@ plato, torta, jamon, manchego, huevo = [0]*ch, [0]*ch, [0]*ch, [0]*ch, [0]*ch
 for i in range(ch):
   st.subheader(f"Chilaquil-{i + 1}")
   #cols = chilaquiles * 5
-  "c"+f"{i+3}", "c{i+4}", "c{i+5}", "c{i+6}", "c{i+7}" = st.columns([1, 1, 1, 1, 1])
+  c + str(i+3), c + str(i+4), c + str(i+5), c + str(i+6), c + str(i+7) = st.columns([1, 1, 1, 1, 1])
   with f"c{i+3}":
     plato[i] = (st.number_input("Plato:", min_value=0, value=0))
   with f"c{i+4}":
