@@ -222,7 +222,7 @@ for i in range(1, ch + 1):
   
 @st.cache
 def convert_csv(df):
-  if orden == 0:
+  if df == None:
     return("Ingresa una orden!.")
   else:
     return df.to_csv(index=False).encode("utf-8")
