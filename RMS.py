@@ -13,8 +13,8 @@ col1, col2 = st.columns([1, 1])
 with col1:
   orden = st.number_input("\# Orden:", min_value=0, value=0)
   now = datetime.now() - timedelta(hours=6)
-  now = now.strftime("%d/%m/%Y %H:%M:%S")
-  now = datetime.strptime(now, "%d/%m/%Y %H:%M:%S")
+  now = now.strftime("%d/%m/%y %H:%M:%S")
+  now = datetime.strptime(now, "%d/%m/%y %H:%M:%S")
 with col2:
   ch = st.number_input("\# Chilaquiles:", min_value=0, value=0)
 
@@ -58,20 +58,68 @@ for i in range(1, ch + 1):
         d["costo"].append(torta[i-1] * 60)
     with c3:
       jamon[i-1] = st.number_input("Jamón:", min_value=0, value=0, key=k[2])
+      if jamon[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("jamon")
+        d["volumen"].append(jamon[i-1])
+        d["costo"].append(jamon[i-1] * 10)
     with c4:
       manchego[i-1] = st.number_input("Manchego:", min_value=0, value=0, key=k[3])
+      if manchego[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("manchego")
+        d["volumen"].append(manchego[i-1])
+        d["costo"].append(manchego[i-1] * 15)
     with c5:
       huevo[i-1] = st.number_input("Huevo", min_value=0, value=0, key=k[4])
+      if huevo[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("huevo")
+        d["volumen"].append(huevo[i-1])
+        d["costo"].append(huevo[i-1] * 15)
     with c6:
       pollo[i-1] = (st.number_input("Pollo:", min_value=0, value=0, key=k[5]))
+      if pollo[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("pollo")
+        d["volumen"].append(pollo[i-1])
+        d["costo"].append(pollo[i-1] * 20)  
     with c7:
       bisteck[i-1] = st.number_input("Bisteck:", min_value=0, value=0, key=k[6])
+      if bisteck[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("bisteck")
+        d["volumen"].append(bisteck[i-1])
+        d["costo"].append(bisteck[i-1] * 30)
     with c8:
       milanesa[i-1] = st.number_input("Milanesa:", min_value=0, value=0, key=k[7])
+      if milanesa[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("milanesa")
+        d["volumen"].append(milanesa[i-1])
+        d["costo"].append(milanesa[i-1] * 35)    
     with c9:
       arrachera[i-1] = st.number_input("Arrachera:", min_value=0, value=0, key=k[8])
+      if arrachera[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("arrachera")
+        d["volumen"].append(arrachera[i-1])
+        d["costo"].append(arrachera[i-1] * 50)       
     with c10:
       aguacate[i-1] = st.number_input("Aguacate", min_value=0, value=0, key=k[9])
+      if aguacate[i-1] > 0:
+        d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("aguacate")
+        d["volumen"].append(aguacate[i-1])
+        d["costo"].append(aguacate[i-1] * 10)        
 
     subtotal = sum(d["costo"])
     total += subtotal
