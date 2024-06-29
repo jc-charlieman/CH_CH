@@ -1,6 +1,6 @@
 import pandas as pd
-# import numpy as np
 import streamlit as st
+import datetime
 
 # Sidebar
 st.title("CHILAQUIL CHILANGO by Wisho!.")
@@ -12,6 +12,9 @@ st.subheader("Menú:")
 col1, col2 = st.columns([1, 1])
 with col1:
   orden = st.number_input("\# Orden:", min_value=0, value=0)
+  now = datetime.datetime.now()
+  now = now.strftime("%d/%m/%Y %H:%M:%S")
+  now = datetime.datetime.strptime(now, "%d/%m/%Y %H:%M:%S")
 with col2:
   ch = st.number_input("\# Chilaquiles:", min_value=0, value=0)
 
@@ -98,7 +101,7 @@ for i in range(1, ch + 1):
 df = pd.DataFrame(d)
 st.write(df)
 st.write(total)
-
+st.write(now)
 
 
 
