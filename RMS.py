@@ -25,7 +25,7 @@ for i in range(1, ch + 1):
   st.subheader(f"Chilaquil-{i}")
   # Diccionario para almacenar los artículos
   d["orden"] = []
-  d["articulo"] = f"ch-{i}"
+  d["articulo"] = []
   d["ingredientes"] = []
   d["volumen"] = []
   d["costo"] = []
@@ -39,6 +39,8 @@ for i in range(1, ch + 1):
       plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=k[0]))
       if plato[i-1] > 0:
         d["orden"].append(orden)
+        d["articulo"].append(f"ch-{i}")
+        d["ingredientes"].append("plato")
         d["volumen"].append(plato[i-1])
         d["costo"].append(plato[i-1] * 65)
     with c2:
