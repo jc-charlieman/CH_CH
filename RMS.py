@@ -23,7 +23,7 @@ for i in range(1, ch + 1):
   #cols = chilaquiles * 5
   #c = [f"c{ch * (col + 3)}" for col in range(5)]
   if i == 1:
-      c = [f"c{ch * (col + 3)}" for col in range(5)]
+    c = [f"c{ch * (col + 3)}" for col in range(5)]
     c[0], c[1], c[2], c[3], c[4] = st.columns([1, 1, 1, 1, 1])
     with c[0]:
       plato[i] = (st.number_input("Plato:", min_value=0, value=0))
