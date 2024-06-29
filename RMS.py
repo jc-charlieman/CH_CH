@@ -224,7 +224,7 @@ for i in range(1, ch + 1):
 def convert_csv(df):
   return df.to_csv(index=False).encode("utf-8")
 
-if df == None:
+if df.empty == True:
   st.write("Ingresa un pedido!.")
 else: 
   csv = convert_csv(df)
