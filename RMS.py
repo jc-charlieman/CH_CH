@@ -229,5 +229,5 @@ try:
   st.download_button(label="Download CSV", data=csv, file_name= "Cuenta" + ".csv", mime="text/csv")
 
 except:
-  st.write("Ingresa un pedido!.")
+  st.write(":red[Ingresa un pedido!.]")
   pass
