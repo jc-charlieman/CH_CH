@@ -222,11 +222,11 @@ for i in range(1, ch + 1):
   
 @st.cache
 def convert_csv(df):
-  if df == None:
-    return("Ingresa una orden!.")
-  else:
-    return df.to_csv(index=False).encode("utf-8")
-   
-csv = convert_csv(df)
-st.download_button(label="Download CSV", data=csv, file_name= "Cuenta" + ".csv", mime="text/csv")
+  return df.to_csv(index=False).encode("utf-8")
+
+if df == None:
+  return("Ingresa un pedido!.")
+else: 
+  csv = convert_csv(df)
+  st.download_button(label="Download CSV", data=csv, file_name= "Cuenta" + ".csv", mime="text/csv")
 
