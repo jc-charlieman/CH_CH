@@ -26,7 +26,7 @@ for i in range(1, ch + 1):
   #c = [f"c{ch * (col + 3)}" for col in range(5)]
   #c[0], c[1], c[2], c[3], c[4] = st.columns([1, 1, 1, 1, 1])
   c1, c2, c3, c4, c5 = st.columns([1, 1, 1, 1, 1])
-  if ch == 1:
+  if i == 1:
     k = [k for k in range(ch, ch + 5)]
     with c1:
       plato[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=k[0]))
