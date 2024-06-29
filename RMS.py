@@ -108,14 +108,14 @@ for i in range(1, ch + 1):
     df1 = pd.DataFrame(d)
     df = pd.concat([df0, df1])
 
-# st.write(df)
-st.write(total)
-st.write(now)
-
-@st.cache
-def convert_csv(df):
-  return df.to_csv(index=False).encode("utf-8")
- 
-csv = convert_csv(df)
-st.download_button(label="Download CSV", data=csv)
+  st.write(df)
+  st.write(total)
+  st.write(now)
+  
+  @st.cache
+  def convert_csv(df):
+    return df.to_csv(index=False).encode("utf-8")
+   
+  csv = convert_csv(df)
+  st.download_button(label="Download CSV", data=csv)
 
