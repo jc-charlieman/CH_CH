@@ -99,7 +99,7 @@ for i in range(1, ch + 1):
       aguacate[i-1] = st.number_input("Aguacate", min_value=0, value=0, key=k[9])
 
 df = pd.DataFrame()
-df.update(df)
+df.update(pd.DataFrame(d))
 st.write(df)
 st.write(total)
 st.write(now)
