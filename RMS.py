@@ -63,15 +63,15 @@ for i in range(1, ch + 1):
     with c5:
       huevo[i-1] = st.number_input("Huevo", min_value=0, value=0, key=k[4])
     with c6:
-      pollo[i-1] = (st.number_input("Plato:", min_value=0, value=0, key=k[5]))
+      pollo[i-1] = (st.number_input("Pollo:", min_value=0, value=0, key=k[5]))
     with c7:
-      bisteck[i-1] = st.number_input("Torta:", min_value=0, value=0, key=k[6])
+      bisteck[i-1] = st.number_input("Bisteck:", min_value=0, value=0, key=k[6])
     with c8:
-      milanesa[i-1] = st.number_input("Jamón:", min_value=0, value=0, key=k[7])
+      milanesa[i-1] = st.number_input("Milanesa:", min_value=0, value=0, key=k[7])
     with c9:
-      arrachera[i-1] = st.number_input("Manchego:", min_value=0, value=0, key=k[8])
+      arrachera[i-1] = st.number_input("Arrachera:", min_value=0, value=0, key=k[8])
     with c10:
-      aguacate[i-1] = st.number_input("Huevo", min_value=0, value=0, key=k[9])
+      aguacate[i-1] = st.number_input("Aguacate", min_value=0, value=0, key=k[9])
 
 st.write(ingredientes)
 
