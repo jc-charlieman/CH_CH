@@ -126,7 +126,7 @@ for i in range(1, ch + 1):
   st.write(total)
   st.write(now)
   
-  @st.cache
+  @st.cache_data
   def convert_csv(df):
     return df.to_csv(index=False).encode("utf-8")
    
