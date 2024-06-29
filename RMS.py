@@ -77,7 +77,7 @@ for i in range(1, ch + 1):
     total += subtotal
     # df0 = pd.DataFrame()
     df1 = pd.DataFrame(d)
-    df = pd.concat([df0, df1])
+    global df = pd.concat([df0, df1])
     
   else:
     k = [k for k in range(10*i, 10*i - 10, -1)]
@@ -106,7 +106,7 @@ for i in range(1, ch + 1):
     total += subtotal
     # df0 = pd.DataFrame()
     df1 = pd.DataFrame(d)
-    df = pd.concat([df0, df1])
+    global df = pd.concat([df0, df1])
 
   st.write(df)
   st.write(total)
