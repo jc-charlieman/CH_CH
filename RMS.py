@@ -122,9 +122,7 @@ for i in range(1, ch + 1):
     df = pd.concat([df, df2])
     st.write(df)
 
-  # st.write(df)
-  # st.write(total)
-  # st.write(now)
+  st.write(total)
   
 @st.cache
 def convert_csv(df):
